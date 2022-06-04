@@ -1,1 +1,163 @@
 /* CSS 작성 */
+
+.container {
+    margin: 0 auto;
+    width: 1020px;
+}
+
+.header-area {
+    margin: 100px 0 48px;
+}
+
+.title {
+    display: flex;
+}
+
+.link-to-homepage {
+    height: 40px;
+}
+
+.logo {
+    width: 176px;
+    height: 40px;
+}
+
+/*  */
+
+.discovery-section {
+    display: inline-block;
+    width: 1020px;
+}
+
+.main-title-area {
+    display: flex;
+    align-items: center;
+    margin: 8px 0 24px;
+    height: 28px;
+}
+
+.main-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 115%;
+}
+
+.division {
+    margin: 0 10px;
+    width: 2px;
+    height: 20px;
+    color: var(--color-gray-600);
+}
+
+.sub-title {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 115%;
+    color: var(--color-gray-600);
+}
+
+.product-list {
+    display: inline-block;
+}
+
+.product-item {
+    position: relative;
+    margin: 16px 16px 0 0;
+    float: left;
+    width: 243px;
+    height: 310px;
+    /* border: 1px solid var(--color-gray-500); */
+}
+
+.product-item.big {
+    float: left;
+    width: 502px;
+    height: 310px;
+    /* border: 1px solid var(--color-gray-500); */
+}
+
+.product-img {
+    margin: 14px 22px 14px 21px;
+    width: 200px;
+    height: 282px;
+}
+
+.product-img.big {
+    margin: 20px 28px;
+    width: 446px;
+    height: 270px;
+}
+
+.product-link {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-gray-500);
+    height: 310px;
+}
+
+.product-item:nth-child(1), 
+.product-item:nth-child(2) {
+    margin-top: 0;
+}
+
+.product-item:nth-child(2),
+.product-item:nth-child(6),
+.product-item:nth-child(9) {
+    margin-right: 0;
+}
+
+.btn-link {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 42px;
+    height: 42px;
+    color: var(--color-gray-100);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.product-link:hover, .product-link:focus {
+    border: 1px solid var(--color-blue-600);
+}
+
+.product-link:hover .btn-link {
+    width: 112px;
+    text-align: right;
+    color: var(--color-white);
+    background-color: var(--color-blue-600);
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.product-link:focus .btn-link {
+    width: 112px;
+    text-align: right;
+    color: var(--color-white);
+    background-color: var(--color-blue-600);
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.product-link:hover .btn-link::before {
+    content: "구매하기";
+    position: absolute;
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 500;
+    left: 20px;
+    bottom: 13px;
+} 
+
+.product-link:focus .btn-link::before {
+    content: "구매하기";
+    position: absolute;
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 500;
+    left: 20px;
+    bottom: 13px;
+} 
+
+
+
