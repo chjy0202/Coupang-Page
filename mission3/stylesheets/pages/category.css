@@ -1,1 +1,20 @@
 /* 카테고리별 추천 광고상품 */
+
+ol, ul {
+	list-style: none;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1022px;
+}
+
+.header-area {
+	margin: 100px 0 48px;
+}
+
+.link-to-homepage {
+	display: flex;
+}
+
+
