@@ -1,20 +1,316 @@
 /* 카테고리별 추천 광고상품 */
 
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-	margin: 0 auto;
-	width: 1022px;
+  margin: 0 auto;
+  width: 1020px;
 }
 
 .header-area {
-	margin: 100px 0 48px;
+  margin: 100px 0 48px;
 }
 
 .link-to-homepage {
-	display: flex;
+  display: flex;
 }
+
+.categorybest-section {
+  display: inline-block;
+  width: 100%;
+}
+
+.sub-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--color-back);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: var(--color-back);
+}
+
+.highlight {
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: var(--color-blue-600);
+}
+
+.category-area {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  height: 634px;
+}
+
+.category-area.house-ware {
+  border-top: 1px solid var(--color-brown-300);
+  border-bottom: 1px solid var(--color-brown-300);
+}
+
+.category-area.kitchen-ware {
+  border-top: 1px solid var(--color-green-700);
+  border-bottom: 1px solid var(--color-green-700);
+}
+
+.category-header-group {
+  padding-left: 24px;
+  width: 172px;
+  height: 100%;
+}
+
+.category-title {
+  margin: 47px 0 8px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.category-title.house-ware, .hash-tag .house-ware {
+  color: var(--color-brown-300);
+}
+
+.category-title.kitchen-ware, .hash-tag .kitchen-ware {
+  color: var(--color-green-700);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  color: var(--color-gray-700);
+}
+
+.link::after {
+  content: '';
+  background-image: url(/mission3/assets/icon/angle-right-default.svg);
+  width: 6px;
+  height: 10px;
+  color: #929292;
+}
+
+.hot-keyword-group {
+  margin-top: 248px;
+}
+
+.hot-keyword {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  color: var(--color-back);
+}
+
+.hash-tag-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.hash-tag {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-white);
+}
+
+.hash-tag span {
+  height: 26px;
+  margin-bottom: 12px;
+  padding: 5px 9px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  border: 1px solid #CCCCCC;
+}
+
+.carousel-area {
+  width: 320px;
+  height: 632px;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 320px;
+  height: 631px;
+}
+
+.banner {
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 483px;
+  left: 30px;
+  width: 260px;
+  height: 90px;
+  color: var(--color-white);
+  z-index: 1;
+}
+
+.banner-text.house-ware {
+  background-color: var(--color-brown-300);
+}
+
+.banner-text.kitchen-ware {
+  background-color: var(--color-green-700);
+}
+
+.text-large {
+  height: 24px;
+  margin-top: 19px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+}
+
+.text-small {
+  height: 19px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: center;
+}
+
+.indicator-group {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 597px;
+  left: 144px;
+  width: 32px;
+  height: 12px;
+  z-index: 1;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-gray-600);
+}
+
+.indicator.current {
+  background-color: var(--color-gray-700);
+}
+
+.product-cards-area {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 528px;
+  height: 632px;
+}
+
+.product-card-group {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 8px;
+}
+
+.product-card-group:first-child {
+  padding-top: 8px;
+  padding-bottom: 0;
+}
+
+.product-card {
+  width: 160px;
+  height: 300px;
+  margin-left: 16px;
+}
+
+.product-card-group::after {
+  content: '';
+  width: 528px;
+  height: 0.5px;
+  background-color: var(--color-gray-600);
+}
+
+.product-card-group:last-child::after {
+  display: none;
+}
+
+.product-img {
+  width: 160px;
+  height: 160px;
+}
+
+.desc {
+  width: 152px;
+  margin-top: 12px;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.price-badge {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: var(--color-red-500);
+}
+
+.price-delivery {
+  display: flex;
+  align-items: center;
+  height: 27px;
+  margin-top: 4px;
+}
+
+.price {
+  margin-right: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-back);
+}
+
+.price span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: var(--color-back);
+}
+
+.rocket-delivery {
+  width: 54px;
+  height: 14px;
+}
+
+
+
+
+
+
+
 
 
