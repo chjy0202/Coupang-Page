@@ -17,33 +17,35 @@
 
 <body>
   <div class="container">
+    <!-- 로그인 바 영역 -->
+    <div class="login-bar-area">
+      <ul class="login-bar">
+        <li><a href="/" class="link">로그인</a></li>
+        <li><a href="/" class="link">회원가입</a></li>
+        <li><a href="/" class="link">고객센터</a></li>
+        <li><a href="/" class="link">쿠팡플레이</a></li>
+        <li><a href="/" class="link">제휴마케팅</a></li>
+      </ul>
+    </div>
+    <!-- // 로그인 바 영역 -->
+
     <header class="header-area">
-      <!-- 로그인 바 영역 -->
-      <div class="login-bar-area">
-        <ul class="login-bar">
-          <li class="link"><a href="/">로그인</a></li>
-          <li class="link"><a href="/">회원가입</a></li>
-          <li class="link"><a href="/">고객센터</a></li>
-          <li class="link"><a href="/">쿠팡플레이</a></li>
-          <li class="link"><a href="/">제휴마케팅</a></li>
-        </ul>
-      </div>
-      <!-- // 로그인 바 영역 -->
       <button class="button--category">
         <span class="btn-txt">카테고리</span>
       </button>
 
       <h1 class="logo-area">
         <a href="https://www.coupang.com/" class="link-to-homepage" target="_blank" rel="noopener">
-          <span class="logo">Coupang</span>
+          <span class="logo sr-only">Coupang</span>
         </a>
       </h1>
 
       <!-- 검색바 영역 -->
       <form class="search-area">
         <div class="search-dropdown">
-          <select name="search-category">
-            <option value="total" class="total">전체</option>
+          <select class="search-category">
+            <option class="total">전체</option>
+            <option>옵션1</option>
           </select>
           <svg class="dropdown-icon" width="40" height="40" viewBox="0 0 40 40" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +70,6 @@
           <li><a href="/" class="link">찜리스트</a></li>
         </ul>
       </div>
-
       <div class="cart">
         <button class="btn-cart">
           <span class="btn-text">장바구니</span>
@@ -78,9 +79,9 @@
       </div>
 
       <ul class="nav">
-        <li><a href="/" class="link"><img src="./assets/icon/icon-rocket.svg" alt="로켓배송">로켓배송</a></li>
-        <li><a href="/" class="link"><img src="./assets/icon/icon-fresh.svg" alt="로켓프레시">로켓프레시</a></li>
-        <li><a href="/" class="link">2022년 설날<img src="./assets/icon/new.svg" alt="new"></a></li>
+        <li><a href="/" class="link"><img src="./assets/icon/icon-rocket.svg" alt="로켓배송" class="left">로켓배송</a></li>
+        <li><a href="/" class="link"><img src="./assets/icon/icon-fresh.svg" alt="로켓프레시" class="left">로켓프레시</a></li>
+        <li><a href="/" class="link">2022년 설날<img src="./assets/icon/new.svg" alt="new" class="right"></a></li>
         <li><a href="/" class="link">로켓직구</a></li>
         <li><a href="/" class="link">골드박스</a></li>
         <li><a href="/" class="link">정기배송</a></li>
